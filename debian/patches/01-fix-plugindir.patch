@@ -1,0 +1,25 @@
+Author: Tom Jampen <tom@cryptography.ch>
+Description:
+ Using the PREFIX environment variable defined in rules to find debian's request
+ tracker installation and fixing the plugin path to install to DESTDIR.
+
+Index: libmodule-install-rtx-perl/lib/Module/Install/RTx.pm
+===================================================================
+--- libmodule-install-rtx-perl.orig/lib/Module/Install/RTx.pm
++++ libmodule-install-rtx-perl/lib/Module/Install/RTx.pm
+@@ -41,12 +41,14 @@ sub RTx {
+     $ENV{RTHOME} =~ s{/RT\.pm$}{} if defined $ENV{RTHOME};
+     $ENV{RTHOME} =~ s{/lib/?$}{}  if defined $ENV{RTHOME};
+     my @try = $ENV{RTHOME} ? ($ENV{RTHOME}, "$ENV{RTHOME}/lib") : ();
++    my $prefix = $ENV{PREFIX};
++    push @INC, "$prefix/lib";
+     while (1) {
+         my @look = @INC;
+         unshift @look, grep {defined and -d $_} @try;
+         push @look, grep {defined and -d $_}
+             map { ( "$_/rt4/lib", "$_/lib/rt4", "$_/lib" ) } @prefixes;
+-        last if eval {local @INC = @look; require RT; $RT::LocalLibPath};
++        last if eval {local @INC = @look; require RT; $RT::LocalPluginPath = '$(DESTDIR)'."$prefix/plugins"; $RT::LocalLibPath};
+ 
+         warn
+             "Cannot find the location of RT.pm that defines \$RT::LocalPath in: @look\n";

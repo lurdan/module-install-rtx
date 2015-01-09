@@ -1,0 +1,20 @@
+Source: libmodule-install-rtx-perl
+Section: perl
+Priority: optional
+Maintainer: KURASHIKI Satoru <lurdan@gmail.com>
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: libmodule-install-perl (>= 0.4),
+ libmodule-install-readmefrompod-perl,
+ perl (>= 5.15.2)
+Standards-Version: 3.9.6
+Homepage: https://metacpan.org/release/Module-Install-RTx
+
+Package: libmodule-install-rtx-perl
+Architecture: all
+Depends: ${misc:Depends}, ${perl:Depends},
+# request-tracker4,
+ libmodule-install-perl (>= 0.4),
+ libmodule-install-readmefrompod-perl
+Description: RT extension installer
+ This Module::Install extension implements several functions for installing RT
+ extensions:

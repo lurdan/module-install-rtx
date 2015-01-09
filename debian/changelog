@@ -1,0 +1,5 @@
+libmodule-install-rtx-perl (0.37-1) UNRELEASED; urgency=low
+
+  * Initial Release.
+
+ -- KURASHIKI Satoru <lurdan@gmail.com>  Fri, 9 Jan 2015 17:53:36 +0900
