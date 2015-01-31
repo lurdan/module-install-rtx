@@ -1,5 +1,5 @@
-libmodule-install-rtx-perl (0.37-1) UNRELEASED; urgency=low
+libmodule-install-rtx-perl (0.37-1) unstable; urgency=low
 
-  * Initial Release.
+  * Initial Release. (Closes: #775711)
 
  -- KURASHIKI Satoru <lurdan@gmail.com>  Fri, 9 Jan 2015 17:53:36 +0900

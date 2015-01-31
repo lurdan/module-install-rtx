@@ -1,0 +1,9 @@
+libmodule-install-rtx-perl
+--------------------
+It is intended to use by RT extension packagers, which is patched to fit
+Debian's RT package file structures.
+(The patch is picked from rt-authen-externalauth package)
+
+To use this, add build-depends and disable bundled inc/ directory.
+
+ -- KURASHIKI Satoru <lurdan@gmail.com>  Tue, 27 Jan 2015 19:13:29 +0900
