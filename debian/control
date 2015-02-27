@@ -12,7 +12,7 @@ Homepage: https://metacpan.org/release/Module-Install-RTx
 Package: libmodule-install-rtx-perl
 Architecture: all
 Depends: ${misc:Depends}, ${perl:Depends},
-# request-tracker4,
+ request-tracker4,
  libmodule-install-perl (>= 0.4),
  libmodule-install-readmefrompod-perl
 Description: RT extension installer

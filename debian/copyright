@@ -8,10 +8,6 @@ Copyright: Best Practical Solutions
            Audrey Tang <cpan@audreyt.org>
 License: MIT
 
-Files: debian/patches/01-fix-plugindir.patch
-Copyright: 2012-2014 Tom Jampen <tom@cryptography.ch>
-License: GPL-2
-
 Files: debian/*
 Copyright: 2015, KURASHIKI Satoru <lurdan@gmail.com>
 License: MIT
@@ -35,6 +31,10 @@ License: MIT
  LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
  OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
  WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+Files: debian/patches/01-fix-plugindir.patch
+Copyright: 2012-2014 Tom Jampen <tom@cryptography.ch>
+License: GPL-2
 
 License: GPL-2
  This program is free software; you can redistribute it and/or modify
