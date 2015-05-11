@@ -1,3 +1,9 @@
+libmodule-install-rtx-perl (0.37-2) UNRELEASED; urgency=medium
+
+  * debian/control: fix long description. (Closes: #778447)
+
+ -- KURASHIKI Satoru <lurdan@gmail.com>  Fri, 27 Feb 2015 18:01:42 +0900
+
 libmodule-install-rtx-perl (0.37-1) unstable; urgency=low
 
   * Initial Release. (Closes: #775711)

@@ -16,5 +16,7 @@ Depends: ${misc:Depends}, ${perl:Depends},
  libmodule-install-perl (>= 0.4),
  libmodule-install-readmefrompod-perl
 Description: RT extension installer
- This Module::Install extension implements several functions for installing RT
- extensions:
+ This Module::Install extension implements several functions
+ for installing RT extensions.
+ .
+ This is for debian packagers of RT extensions.
