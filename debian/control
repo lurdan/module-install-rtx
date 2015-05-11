@@ -1,7 +1,8 @@
 Source: libmodule-install-rtx-perl
 Section: perl
 Priority: optional
-Maintainer: KURASHIKI Satoru <lurdan@gmail.com>
+Maintainer: Debian Request Tracker Group <pkg-request-tracker-maintainers@lists.alioth.debian.org>
+Uploaders: KURASHIKI Satoru <lurdan@gmail.com>
 Build-Depends: debhelper (>= 9)
 Build-Depends-Indep: libmodule-install-perl (>= 0.4),
  libmodule-install-readmefrompod-perl,
@@ -19,4 +20,4 @@ Description: RT extension installer
  This Module::Install extension implements several functions
  for installing RT extensions.
  .
- This is for debian packagers of RT extensions.
+ This is for Debian packagers of RT extensions.

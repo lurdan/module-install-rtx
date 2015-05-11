@@ -1,6 +1,8 @@
 libmodule-install-rtx-perl (0.37-2) unstable; urgency=medium
 
-  * debian/control: fix long description. (Closes: #778447)
+  * debian/control:
+    - fix long description. (Closes: #778447)
+    - change Maintainer; move to Team maintainance.
   * debian/patches/02-support-installdirs-vendor.patch:
     - Introduce new option to specify installdirs based on:
       https://github.com/bestpractical/module-install-rtx/pull/3
